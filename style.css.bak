@@ -1,0 +1,311 @@
+*{ Margin: 0;
+padding: 0;
+font-family: 'open sans', sans-serif;
+}
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+	ul li a{
+		text-decoration: none;
+	}
+	
+	div img{
+		display:block;
+		width: 100%;
+	}
+	
+	
+	.flex-container{
+		display: flex;
+		max-width: 992px;
+		margin: auto;
+		width: 100%;
+		min-width: 320px;
+		padding; 10px 15px;
+		
+	} 
+	
+	
+	header{
+		background-color: darkblue;
+		color: white;
+		height: 100px;
+		display: flex;
+		align-items: center;	
+	}
+	
+	header .list-items{
+		display: flex;
+		max-width: 260px;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	header .menu{
+		justify-content: space-between;
+	}
+	
+	.list-items li a{
+		color: white;
+	} 
+	
+	.apresentação{
+		height: 100vh;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.apresentação .texto-apresentação{
+		min-height: 200px;
+	}
+	
+	.texto-apresentação h1{
+		color: darkblue;
+		font-size: 48px;
+		margin-bottom: 10px;
+	}
+	
+	.btn{
+		background-color: darkblue;
+		color: white;
+		text-align: center;
+		border-radius: 30px;
+		width: 220px;
+		display: block;
+		text-decoration: none;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#quem-somos{
+		align-items: center;
+		justify-content: space-between;
+				
+	}
+	
+	#quem-somos h2{
+		font-size: 32px;
+		color: darkblue;
+		display: flex;
+		margin-bottom: 20px;
+	}
+	
+	#quem-somos h2::before{
+		content: "";
+		height: 58px;
+		width: 5px;
+		margin-right: 5px;
+		background-color: darkblue;
+		position: relative; 
+	}
+	
+	#quem-somos p{
+	margin-bottom: 10px;
+	width: 90%;
+	}
+	
+	#quem-somos img{
+	max-width: 520px;
+	min-width: 420px;
+	}
+	
+	
+	.container-externo{
+		background-color: darkblue;
+		width: 100%;
+	}
+	
+	#servicos{
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+	
+	#servicos h2{
+		color: white;
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	
+	
+	.list-servicos{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	
+	.list-servicos .items-servicos{
+		text-align: center;
+	}
+	
+	.items-servicos a{
+		width: 220px;
+		background-color: white;
+		border-radius: 30px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		margin-top: 20px;
+		padding: 5px 10px;
+		color: darkblue;
+		font-size: 12;
+		text-decoration: none;
+		font-weight: 700px;	
+	}
+	
+	.items-servicos p{
+		font-weight: 700;
+		font-size: 18px;
+		color: white;
+		margin-top: 20px;
+		
+	}	
+	
+	.items-servicos img{
+		width: 80%;
+		Margin: auto;
+		
+			
+	}	
+	
+	#planos{
+		flex-direction: column;
+		min-height: 100vh;	
+		padding-top: 50px;
+	}
+	
+	#planos h2{
+		font-size: 32px;
+	}
+	
+	.list-planos{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		
+	}
+	
+	.item-plano{
+		flex: 1;
+		border: 5px solid darkblue;
+		margin-right: 20px;
+		max-width: 240px;
+	
+	}
+	
+	.item-plano .btn{
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	.item-plano h3{
+		font-size: 24px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		align-items: center;
+		
+	}
+	
+	.item-plano h3::after{
+		content:"";
+		background-color: darkblue;
+		width: 78%;
+		height: 3px;
+		margin-top: 20px;
+		margin-left: 30px;
+		margin-bottom: 10px;
+		
+	}
+	
+	.item-plano ul{
+		padding: 10px 20px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	
+	.item-plano ul li{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		
+		
+	}
+	
+	.item-plano ul li::before{
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: darkblue;
+		margin-right: 5px;
+	}
+	
+	footer{
+		background-color: darkblue;
+		min-height: 70px;
+		display: flex;
+		align-items: center;
+	}
+	
+	footer .footer{
+		justify-content: space-between;
+		color: white;
+	}
+	
+	/ * Mobile * /
+	@media(max-width: 992px;){
+	.flex-container{
+		flex-direction: column;
+	}
+	.apresentação{
+		flex-direction: column-reverse;
+		
+	}
+	
+	.apresentação .texto-apresentação{
+		width:100%
+	}
+	
+	#quem-somos{
+		flex-direction: column-reverse;
+		
+	}
+	
+	#quem-somos{ 
+	min-width: 320px;
+	}
+	
+	.list-servicos{
+		flex-direction: column;
+				
+	}
+	
+	.items-servicos{
+		width: 50%;
+		margin: auto;
+	}	
+	
+	.list-planos{
+		flex-direction: column;
+		align-items: flex-start;
+		
+	}	
+	
+	.list-planos .item-plano{
+		max-width: 90%;
+		Margin: auto;
+		width: 100%;
+	}
+	
+	
+	}
